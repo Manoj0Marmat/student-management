@@ -4,6 +4,8 @@
  */
 package student;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author manojdilipmarmat
@@ -172,6 +174,8 @@ public class Home extends javax.swing.JFrame {
         jButton36 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1415, 850));
 
         jPanel1.setBackground(new java.awt.Color(102, 0, 102));
 
@@ -555,6 +559,11 @@ public class Home extends javax.swing.JFrame {
         jButton9.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Logout");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -992,6 +1001,11 @@ public class Home extends javax.swing.JFrame {
         jButton18.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
         jButton18.setText("Logout");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
@@ -1514,6 +1528,11 @@ public class Home extends javax.swing.JFrame {
         jButton27.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton27.setForeground(new java.awt.Color(255, 255, 255));
         jButton27.setText("Logout");
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
         jPanel26.setLayout(jPanel26Layout);
@@ -1752,6 +1771,11 @@ public class Home extends javax.swing.JFrame {
         jButton36.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton36.setForeground(new java.awt.Color(255, 255, 255));
         jButton36.setText("Logout");
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
         jPanel34.setLayout(jPanel34Layout);
@@ -2023,6 +2047,38 @@ public class Home extends javax.swing.JFrame {
     private void email6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_email6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_email6ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?", "Select", JOptionPane.YES_NO_OPTION);
+        if(a==0){
+            this.dispose();
+        }
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?", "Select", JOptionPane.YES_NO_OPTION);
+        if(a==0){
+            this.dispose();
+        }
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?", "Select", JOptionPane.YES_NO_CANCEL_OPTION);
+        if(a==0){
+            this.dispose();
+        }
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        // TODO add your handling code here:
+        int a = JOptionPane.showConfirmDialog(this, "Do you want to logout now?", "Select", JOptionPane.YES_NO_OPTION);
+        if(a==0){
+            this.dispose();
+        }
+    }//GEN-LAST:event_jButton36ActionPerformed
 
     /**
      * @param args the command line arguments
